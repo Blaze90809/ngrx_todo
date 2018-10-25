@@ -1,7 +1,8 @@
+import { ToDoComponent } from './to-do/to-do.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [{path: 'app-todo', component: ToDoComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
