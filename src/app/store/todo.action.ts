@@ -12,6 +12,7 @@ export class GetToDo implements Action {
 }
 
 export class CreateToDo implements ActionWithPayload<ToDo> {
+    
     readonly type = CREATE_TODO;
     payload: ToDo;
 

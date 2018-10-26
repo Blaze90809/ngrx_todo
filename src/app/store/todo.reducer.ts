@@ -8,12 +8,14 @@ import {Action} from "@ngrx/store";
 const initialState = initializedState();
 
 export function ToDoReducer(state: ToDoState = initialState, action: Action) {
-
+    console.log("Reducer");
     switch (action.type) {
         case ToDoActions.GET_TODO:
+        console.log("get todo");
             return { ...state, Loaded: false, Loading: true };
 
         case ToDoActions.CREATE_TODO:
+        console.log("create todo");
             return ({
                 ...state,
                 ToDoList: state.ToDoList.concat((action as ActionWithPayload<ToDo[]>).payload),

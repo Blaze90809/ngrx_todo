@@ -40,7 +40,7 @@ export class ToDoComponent implements OnInit {
   ToDoList: ToDo[];
 
   CreateToDo() {
-    console.info(this.Title);
+    console.log(this.Title);
     let todoAction: ActionWithPayload<ToDo> = {
       type: CREATE_TODO,
       payload: {Title: this.Title, IsCompleted: this.Completed}
