@@ -1,3 +1,10 @@
-<p>
-  notes-list works!
-</p>
+<h2>My wishlists</h2>
+
+<ng-container *ngFor="let ToDoState of ToDoList">
+  <div class="row">
+    <div class="col-md-2">Name:</div>
+    <div class="col-md-2 todoItem">{{ToDoState.Title}}</div>
+    <div class="col-md-2">IsCompleted:</div>
+    <div class="col-md-2 todoItem">{{ToDoState.IsCompleted}}</div>
+  </div>
+</ng-container>
