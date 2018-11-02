@@ -1,12 +1,12 @@
 
-import { ToDoState } from './../store/todo.state';
+import { ToDoState } from '../../store/todo.state';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Store, select, Action } from '@ngrx/store';
 import { Observable, Subscription } from 'rxjs';
-import { CreateToDo, CREATE_TODO, GET_TODO } from '../store/todo.action';
-import { ToDoReducer } from '../store/todo.reducer';
-import ToDo from '../todo.model';
-import ActionWithPayload from "../ActionWithPayload";
+import { CreateToDo, CREATE_TODO, GET_TODO } from '../../store/todo.action';
+import { ToDoReducer } from '../../store/todo.reducer';
+import ToDo from '../../todo.model';
+import ActionWithPayload from "../../ActionWithPayload";
 import { map } from 'rxjs/operators';
 
 @Component({
